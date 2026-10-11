@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LOOMR — Design . Develop . Manufacture.</title>
+<meta name="description" content="LOOMR is a design, development and manufacturing partner for global fashion brands — from concept to creation. London · Istanbul · Milano · Berlin.">
+<meta name="theme-color" content="#0b0909">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LOOMR">
+<meta property="og:title" content="LOOMR — Design . Develop . Manufacture.">
+<meta property="og:description" content="A partner for global fashion brands. From concept to creation.">
+<meta property="og:image" content="images/01-hero.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute">
+  <symbol id="eagle" viewBox="0 0 64 48"><path d="M32 44c-2.2-5.6-5.4-9.3-10.4-11.6-5.8-2.7-13.4-3.6-19.6-11.4 6.4 3.4 12.5 4 17.6 3.4C13 20.6 8.7 13.8 8 4.5c4.2 6.6 10.3 11.3 18 13.8l2.6-5.8 3.6-2.5 3.8 2.6-1.6 3.6 2.1 2c7.3-2.6 13-7.3 17.5-13.7-.7 9.3-5 16.1-11.6 19.9 5.1.6 11.2 0 17.6-3.4-6.2 7.8-13.8 8.7-19.6 11.4C37.4 34.7 34.2 38.4 32 44z"/></symbol>
+  <symbol id="arr" viewBox="0 0 26 10"><path d="M0 5h25M20 .5 25 5l-5 4.5"/></symbol>
+</svg>
+
+<div class="grain"></div>
+
+<div class="weave in" aria-hidden="true">
+  <i style="--k:0"></i><i style="--k:1"></i><i style="--k:2"></i><i style="--k:3"></i><i style="--k:4"></i><i style="--k:5"></i>
+  <i style="--k:6"></i><i style="--k:7"></i><i style="--k:8"></i><i style="--k:9"></i><i style="--k:10"></i><i style="--k:11"></i>
+  <p class="weave-label"><span class="weave-num"></span><span class="weave-name">LOOMR</span></p>
+</div>
+
+<header>
+  <a href="#home" class="brand" data-go="0"><svg><use href="#eagle"/></svg>LOOMR</a>
+  <nav class="main">
+    <a href="#what-we-do" data-go="1">Services</a>
+    <a href="#styling" data-go="7">Collections</a>
+    <a href="#manufacturing" data-go="6">Manufacturing</a>
+    <a href="#design-studio" data-go="3">Studio</a>
+    <a href="#concept" data-go="2">Academy</a>
+    <a href="#concept" data-go="2">About</a>
+    <a href="#contact" data-go="8">Contact</a>
+  </nav>
+  <div class="tools">
+    <span class="lang">EN</span>
+    <span class="sep"></span>
+    <button aria-label="Search"><svg viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="6.5"/><path d="m13.5 13.5 5 5"/></svg></button>
+    <button class="burger" aria-label="Menu" aria-expanded="false" aria-controls="site-menu"><i></i><i></i><i></i></button>
+  </div>
+</header>
+
+<nav class="menu" id="site-menu" aria-label="Site menu">
+  <ol>
+    <li><a href="#home" data-go="0" style="--i:0">Home</a></li>
+    <li><a href="#what-we-do" data-go="1" style="--i:1">What We Do</a></li>
+    <li><a href="#concept" data-go="2" style="--i:2">From Concept to Creation</a></li>
+    <li><a href="#design-studio" data-go="3" style="--i:3">Design Studio</a></li>
+    <li><a href="#fabric-room" data-go="4" style="--i:4">Fabric Room</a></li>
+    <li><a href="#sample-room" data-go="5" style="--i:5">Sample Room</a></li>
+    <li><a href="#manufacturing" data-go="6" style="--i:6">Manufacturing</a></li>
+    <li><a href="#styling" data-go="7" style="--i:7">Styling &amp; Collections</a></li>
+    <li><a href="#contact" data-go="8" style="--i:8">Contact</a></li>
+  </ol>
+  <aside>
+    <h4>LOOMR</h4>
+    <p>A partner for global fashion brands.<br>London · Istanbul · Milano · Berlin</p>
+  </aside>
+</nav>
+
+<main class="stage">
+
+  <!-- 01 HERO -->
+  <section id="home" class="page p-hero">
+    <div class="bg"></div><div class="shade"></div>
+    <div class="content">
+      <h1 class="hero-title r split">LOOMR</h1>
+      <p class="hero-sub r">Design . Develop . Manufacture.</p>
+      <div class="rule r"></div>
+      <p class="hero-lede r">A partner for global fashion brands.</p>
+      <a href="#what-we-do" class="btn r" data-next><span>Explore Loomr</span><svg class="arrow"><use href="#arr"/></svg></a>
+    </div>
+  </section>
+
+  <!-- 02 WHAT WE DO -->
+  <section id="what-we-do" class="page p-what" data-light>
+    <div class="bg"></div>
+    <div class="content">
+      <div class="what-head r">
+        <span class="eyebrow">What we do</span>
+        <a href="#concept" class="link-arrow" data-next><span>Our approach</span><svg class="arrow"><use href="#arr"/></svg></a>
+      </div>
+      <div class="cols">
+        <div class="col r" data-go="3"><h3>Design</h3><div class="rule"></div><p>Trend research, creative design and product development.</p><svg class="arrow"><use href="#arr"/></svg></div>
+        <div class="col r" data-go="6"><h3>Manufacturing</h3><div class="rule"></div><p>Premium fabrics and high quality production with global standards.</p><svg class="arrow"><use href="#arr"/></svg></div>
+        <div class="col r" data-go="7"><h3>Collections</h3><div class="rule"></div><p>Contemporary and timeless collections for global markets.</p><svg class="arrow"><use href="#arr"/></svg></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 CONCEPT -->
+  <section id="concept" class="page p-concept">
+    <div class="bg"></div><div class="shade"></div>
+    <div class="content">
+      <h2 class="concept-title r split">From concept<br>to creation</h2>
+      <div class="rule r"></div>
+      <p class="lede r">Step inside our world and explore the process behind global collections.</p>
+      <a href="#design-studio" class="btn r" data-next><span>Enter Loomr</span><svg class="arrow"><use href="#arr"/></svg></a>
+    </div>
+  </section>
+
+  <!-- 04 DESIGN STUDIO -->
+  <section id="design-studio" class="page room p-studio" data-room="0">
+    <div class="bg"></div><div class="shade"></div>
+    <div class="content">
+      <p class="num r">01</p>
+      <h2 class="room-title r split">Design<br>Studio</h2>
+      <div class="rule r"></div>
+      <p class="lede r">Creative ideas, trend research and product development.</p>
+      <svg class="arrow r"><use href="#arr"/></svg>
+    </div>
+  </section>
+
+  <!-- 05 FABRIC ROOM -->
+  <section id="fabric-room" class="page room p-fabric" data-room="1">
+    <div class="bg"></div><div class="shade"></div>
+    <div class="content">
+      <p class="num r">02</p>
+      <h2 class="room-title r split">Fabric<br>Room</h2>
+      <div class="rule r"></div>
+      <p class="lede r">Premium fabrics, sustainable options and custom developments.</p>
+      <svg class="arrow r"><use href="#arr"/></svg>
+    </div>
+  </section>
+
+  <!-- 06 SAMPLE ROOM -->
+  <section id="sample-room" class="page room p-sample" data-room="2">
+    <div class="bg"></div><div class="shade"></div>
+    <div class="content">
+      <p class="num r">03</p>
+      <h2 class="room-title r split">Sample<br>Room</h2>
+      <div class="rule r"></div>
+      <p class="lede r">Pattern making, sample development and technical refinement.</p>
+      <svg class="arrow r"><use href="#arr"/></svg>
+    </div>
+  </section>
+
+  <!-- 07 MANUFACTURING -->
+  <section id="manufacturing" class="page room p-manu" data-room="3">
+    <div class="bg"></div><div class="shade"></div>
+    <div class="content">
+      <p class="num r">04</p>
+      <h2 class="room-title r split">Manufacturing</h2>
+      <div class="rule r"></div>
+      <p class="lede r">High quality production with global standards.</p>
+      <svg class="arrow r"><use href="#arr"/></svg>
+    </div>
+  </section>
+
+  <!-- 08 STYLING -->
+  <section id="styling" class="page room p-styling" data-room="4">
+    <div class="bg"></div><div class="shade"></div>
+    <div class="content">
+      <p class="num r">05</p>
+      <h2 class="room-title r split">Styling &amp;<br>Collections</h2>
+      <div class="rule r"></div>
+      <p class="lede r">Contemporary and timeless collections for global markets.</p>
+      <svg class="arrow r"><use href="#arr"/></svg>
+    </div>
+  </section>
+
+  <!-- 09 CLOSING + FOOTER -->
+  <section id="contact" class="page p-final">
+    <div class="bg"></div><div class="shade"></div>
+    <div class="content">
+      <h2 class="final-title r split">LOOMR</h2>
+      <p class="final-sub r">A Partner for Global Fashion Brands.</p>
+      <a href="#" class="btn r"><span>Get in touch</span><svg class="arrow"><use href="#arr"/></svg></a>
+    </div>
+    <footer>
+      <div class="f-top">
+        <a href="#home" class="brand" data-go="0"><svg><use href="#eagle"/></svg>LOOMR</a>
+        <nav>
+          <a href="#what-we-do" data-go="1">Services</a><a href="#styling" data-go="7">Collections</a><a href="#manufacturing" data-go="6">Manufacturing</a>
+          <a href="#design-studio" data-go="3">Studio</a><a href="#concept" data-go="2">Academy</a><a href="#concept" data-go="2">About</a><a href="#contact" data-go="8">Contact</a>
+        </nav>
+        <div class="cities">
+          <ul><li>London</li><li>Istanbul</li><li>Milano</li><li>Berlin</li></ul>
+          <div class="social">
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.8.1 3.3.1 4.8 1.7 4.9 4.9.1 1.3.1 1.6.1 4.8s0 3.6-.1 4.8c-.1 3.2-1.7 4.8-4.9 4.9-1.3.1-1.6.1-4.8.1s-3.6 0-4.8-.1c-3.3-.1-4.8-1.7-4.9-4.9C2.2 15.6 2.2 15.2 2.2 12s0-3.6.1-4.8C2.4 3.9 3.9 2.4 7.2 2.3 8.4 2.2 8.8 2.2 12 2.2zM12 0C8.7 0 8.3 0 7.1.1 2.7.3.3 2.7.1 7.1 0 8.3 0 8.7 0 12s0 3.7.1 4.9c.2 4.4 2.6 6.8 7 7 1.2.1 1.6.1 4.9.1s3.7 0 4.9-.1c4.4-.2 6.8-2.6 7-7 .1-1.2.1-1.6.1-4.9s0-3.7-.1-4.9c-.2-4.4-2.6-6.8-7-7C15.7 0 15.3 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-11.8a1.4 1.4 0 1 0 0 2.9 1.4 1.4 0 0 0 0-2.9z"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z"/></svg></a>
+            <a href="#" aria-label="YouTube"><svg viewBox="0 0 24 24"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.2 3.6z"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="f-bot">
+        <span>© <span class="year">2026</span> LOOMR. All rights reserved.</span>
+        <button data-go="0">Scroll to top <span>↑</span></button>
+      </div>
+    </footer>
+  </section>
+</main>
+
+<nav class="rooms-index" aria-label="Rooms" hidden>
+  <button data-go="3">01</button><button data-go="4">02</button><button data-go="5">03</button><button data-go="6">04</button><button data-go="7">05</button>
+</nav>
+
+<div class="counter"><span class="cur">01</span><span class="bar"><i></i></span><span class="tot">09</span></div>
+<div class="hint">Click<i></i></div>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

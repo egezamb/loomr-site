@@ -1,0 +1,6 @@
+{
+  "redirects": [
+    { "source": "/rooms/:path*", "destination": "https://loomr-new.vercel.app/rooms/:path*", "permanent": false },
+    { "source": "/giris", "destination": "https://loomr-new.vercel.app/giris", "permanent": false }
+  ]
+}

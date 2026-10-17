@@ -13,7 +13,7 @@
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
   // cover: last thread lands at 620ms + 11 * 32ms; the label gets a beat to be read
   const COVER = 1100, REVEAL = 1000;
-  let index = -1, locked = false;
+  let index = -1, locked = false, queued = null;
 
   document.querySelector('.counter .tot').textContent = pad(pages.length);
   document.querySelector('.year').textContent = new Date().getFullYear();
@@ -74,7 +74,7 @@
       show(next);
       locked = true;
       setTimeout(open, 700);
-      setTimeout(() => { locked = false; }, 700 + REVEAL);
+      setTimeout(unlock, 700 + REVEAL);
       return;
     }
     if (reduceMotion) return show(next);
@@ -86,11 +86,20 @@
     weave.classList.remove('out');
     weave.classList.add('in');
     setTimeout(() => { show(next); open(); }, COVER);
-    setTimeout(() => { locked = false; }, COVER + REVEAL);
+    setTimeout(unlock, COVER + REVEAL);
   }
 
   function open() {
     weave.classList.replace('in', 'out');
+  }
+
+  // a hash change that lands mid-transition is replayed once the threads have opened
+  function unlock() {
+    locked = false;
+    if (queued === null) return;
+    const q = queued;
+    queued = null;
+    go(q);
   }
 
   const next = () => go(index + 1);
@@ -152,6 +161,10 @@
     const n = parseInt(h, 10);
     return n >= 1 && n <= pages.length ? n - 1 : 0;
   };
-  addEventListener('hashchange', () => go(fromHash()));
+  // read the target now: show() rewrites the hash before the lock lifts
+  addEventListener('hashchange', () => {
+    if (locked) queued = fromHash();
+    else go(fromHash());
+  });
   go(fromHash());
 })();
